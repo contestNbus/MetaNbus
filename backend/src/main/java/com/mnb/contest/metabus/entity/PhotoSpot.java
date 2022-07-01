@@ -41,6 +41,8 @@ public class PhotoSpot {
 
   private String photoSpotName;
 
+  private String coordinate;
+
   @OneToMany(
     orphanRemoval = true,
     mappedBy = "photo_spot",
