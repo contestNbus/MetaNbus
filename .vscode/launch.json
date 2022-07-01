@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-MetabusApplication<metabus>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.mnb.contest.metabus.MetabusApplication",
+      "projectName": "metabus",
+      "console": "internalConsole",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
