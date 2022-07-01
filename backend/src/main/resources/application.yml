@@ -1,0 +1,24 @@
+server:
+  port: 1117
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    show-sql: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    url: jdbc:postgresql://localhost:5434/postgres
+    username: postgres
+    password: post123!
+
+mybatis:
+  type-aliases-package: com.mnb.contest.metabus.dto
+  configuration.map-underscore-to-camel-case: true
