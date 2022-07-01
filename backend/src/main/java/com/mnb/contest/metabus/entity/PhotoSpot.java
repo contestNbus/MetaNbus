@@ -45,14 +45,14 @@ public class PhotoSpot {
 
   @OneToMany(
     orphanRemoval = true,
-    mappedBy = "photo_spot",
+    mappedBy = "photoSpot",
     cascade = { CascadeType.REMOVE }
   )
   private List<Gallery> galleries = new ArrayList<>();
 
   @OneToMany(
     orphanRemoval = true,
-    mappedBy = "photo_spot",
+    mappedBy = "photoSpot",
     cascade = { CascadeType.REMOVE }
   )
   private List<Poze> poses = new ArrayList<>();
